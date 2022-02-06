@@ -1,68 +1,111 @@
-html, body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-
-  font-family: 'Open Sans', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
 }
-
-.name {
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 2px;
+body {
+	font-family: 'Poppins', sans-serif;
 }
-
 .wrapper {
-  background-color: lightpink;
-  
-  max-width: 50%;
-  display: flex;
-  flex-direction: row;
-  height: 80%;
+	width: 1170px;
+	margin: auto;
 }
-
-.left, .right {
-  background-color: lightblue;
-  
-  margin: 5px;
-  max-width: 50%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
-
-.left {
-  align-items: center;
-  justify-content: center;
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
 }
-
-.profile-picture {
-  border-radius: 50%;
+.nav-area li {
+	display: inline-block;
 }
-
-.social-links {
-  list-style: none;
-  padding-left: 0px;
-  font-size: 18px;
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
 }
-
-.social-links li {
-  display: inline-block;
-  margin-right: 8px;
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
 }
-
-.social-links a {
-  text-decoration: none;
-  padding: 4px;
+.logo {
+	float: left;
 }
-
-.social-links a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.logo img {
+	width: 100%;
+	padding: 15px 0;
 }
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
 
-.body {
-  background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
 }
