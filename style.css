@@ -47,7 +47,7 @@ body {
 	width: 30%;
 	height: 10%;
 	left: 900px;
-	top: 430px;
+	top: 350px;
 }
 
 .pe {
@@ -55,7 +55,7 @@ body {
 	width: 30%;
 	height: 10%;
 	left: 900px;
-	top: 640px;
+	top: 560px;
 }
 
 .ta {
@@ -63,26 +63,16 @@ body {
 	width: 30%;
 	height: 10%;
 	left: 900px;
-	top: 920px;
+	top: 850px;
 }
-
-
-
 
 .skl {
 	position: relative;
 	width: 30%;
 	height: 10%;
 	left: 900px;
-	top: 800px;
+	top: 700px;
 }
-
-
-.ft {
-	position: absolute;
-	top: 1000px;
-}
-
 
 .wrapper {
 	width: 1170px;
